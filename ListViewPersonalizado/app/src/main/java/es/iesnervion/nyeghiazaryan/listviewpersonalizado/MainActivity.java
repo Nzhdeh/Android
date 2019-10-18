@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lvItem=findViewById(R.id.lv1);
-        adaptador=new PersonaAdapter(this,Lista());
-        lvItem.setAdapter(adaptador);
+//        lvItem=findViewById(R.id.lv1);
+//        adaptador=new PersonaAdapter(this,Lista());
+//        lvItem.setAdapter(adaptador);
     }
 
     private ArrayList<Persona> Lista()
