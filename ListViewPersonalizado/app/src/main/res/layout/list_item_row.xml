@@ -11,18 +11,12 @@
         android:src="@drawable/ic_launcher"
         android:layout_weight="30"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-
         <TextView
             android:id="@+id/tv1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="70"
-            android:text="@string/nombre"
+            android:text="Hello world"
             android:textColor="#3F4049"
             android:gravity="center_vertical"/>
-    </LinearLayout>
-
 </LinearLayout>

@@ -1,6 +1,3 @@
 <resources>
     <string name="app_name">ListViewPersonalizado</string>
-    <string name="nombre">Nombre</string>
-    <string name="apellidos">Apellidos</string>
-    <string name="imagen">Imagen</string>
 </resources>
