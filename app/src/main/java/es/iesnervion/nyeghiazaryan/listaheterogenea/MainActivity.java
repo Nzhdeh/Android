@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
 
             if(row==null)
             {
-
+                //TODO aprende hacer esto illo
             }
 
             return row;
