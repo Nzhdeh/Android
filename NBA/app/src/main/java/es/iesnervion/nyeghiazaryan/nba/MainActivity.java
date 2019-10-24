@@ -1,7 +1,9 @@
 package es.iesnervion.nyeghiazaryan.nba;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +11,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
 {
+    TextView selection;
     ListView listaDatos;
     ArrayList<Nba> lista;
 
