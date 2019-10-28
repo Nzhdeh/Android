@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -22,7 +23,17 @@ public class MainActivity extends AppCompatActivity
 
         listaDatos=findViewById(R.id.lstNba);
 
-        lista=new ArrayList<>();
+        lista=CargarListaNba();
+
+        Adaptador miAdaptador=new Adaptador(getApplicationContext(),lista);
+
+        listaDatos.setAdapter(miAdaptador);
+
+    }
+
+    public ArrayList<Nba> CargarListaNba()
+    {
+        ArrayList<Nba> lista = new ArrayList<>();
 
         lista.add(new Nba(1,"Atlanta Hawks", R.drawable.atlanta_hawks));
         lista.add(new Nba(2,"Boston Celtics", R.drawable.boston_celtics));
@@ -40,9 +51,6 @@ public class MainActivity extends AppCompatActivity
         lista.add(new Nba(14,"Toronto Raptors", R.drawable.toronto_raptors));
         lista.add(new Nba(15,"washington Wizards", R.drawable.washington_wizards));
 
-        Adaptador miAdaptador=new Adaptador(getApplicationContext(),lista);
-
-        listaDatos.setAdapter(miAdaptador);
-
+        return lista;
     }
 }
