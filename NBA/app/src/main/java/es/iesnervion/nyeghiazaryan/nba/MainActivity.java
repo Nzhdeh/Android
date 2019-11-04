@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listaDatos=findViewById(R.id.lstNba);
+        listaDatos=findViewById(R.id.listNba);
 
         lista=CargarListaNba();
 
