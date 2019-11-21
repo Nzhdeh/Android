@@ -21,17 +21,17 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        usuario.findViewById(R.id.etUsuario);
-        contraseña.findViewById(R.id.etContraseña);
-        entrar.findViewById(R.id.btnEntrar);
+//        usuario.findViewById(R.id.etUsuario);
+//        contraseña.findViewById(R.id.etContraseña);
+//        entrar.findViewById(R.id.btnEntrar);
 
-        entrar.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Toast.makeText(MainActivity.this, "Entrando...", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        entrar.setOnClickListener(new View.OnClickListener()
+//        {
+//            @Override
+//            public void onClick(View v)
+//            {
+//                Toast.makeText(MainActivity.this, "Entrando...", Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 }
