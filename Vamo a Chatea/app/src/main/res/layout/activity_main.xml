@@ -27,27 +27,26 @@
             android:id="@+id/twCompadre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chat Compadre"
+            android:layout_margin="10sp"
+            android:text="@string/chatCompadre"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_margin="10sp"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etUsuario"
             android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:hint="Usuario"
             android:layout_marginLeft="70sp"
-            />
+            android:hint="@string/usuario" />
 
         <EditText
             android:id="@+id/etContraseña"
             android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
+            android:layout_marginLeft="70sp"
+            android:hint="@string/contraseña"
             android:includeFontPadding="true"
-            android:inputType="textPassword"
-            android:layout_marginLeft="70sp" />
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btnEntrar"
