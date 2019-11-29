@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".ConversacionActivity">
 
-    <ImageView
+    <CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="90dp"
-        android:layout_height="74dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
