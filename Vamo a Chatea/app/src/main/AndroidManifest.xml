@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConversacionActivity"></activity>
+        <activity android:name=".ConversacionActivity" />
         <activity android:name=".ContenedorActivity" />
         <activity android:name=".FragmentListaChatsActivity" />
         <activity android:name=".MainActivity">
