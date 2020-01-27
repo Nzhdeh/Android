@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ConversacionActivity">
+    android:layout_height="match_parent">
 
     <CircleImageView
         android:id="@+id/imageView"
@@ -18,7 +17,7 @@
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textNick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -36,11 +35,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textNick" />
 
     <EditText
-        android:layout_width="259dp"
-        android:layout_height="53dp"
+        android:layout_width="276dp"
+        android:layout_height="49dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="28dp"
@@ -54,6 +53,8 @@
         android:id="@+id/send_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
