@@ -8,33 +8,39 @@
     android:layout_gravity="center_horizontal">
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
         android:weightSum="1">
 
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="1dp"/>
+
         <ImageButton
             android:id="@+id/Linterna"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/image"/>
         <Space
             android:layout_width="30dp"
             android:layout_height="1dp"/>
         <ImageButton
             android:id="@+id/Nivel"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/imagen"/>
 
         <Space
             android:layout_width="30dp"
             android:layout_height="1dp"/>
+
         <ImageButton
             android:id="@+id/Musica"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/modostiempos"/>
 
 

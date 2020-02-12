@@ -15,14 +15,15 @@
         tools:layout="@layout/fragment_menu"/>
 
     <RelativeLayout
+        android:id="@+id/relativ"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center">
 
         <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:id="@+id/imgrelativ"
+            android:layout_width="164dp"
+            android:layout_height="164dp"
             android:src="@drawable/modostiempos"/>
     </RelativeLayout>
-
 </LinearLayout>
