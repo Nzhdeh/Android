@@ -10,7 +10,8 @@ import es.iesnervion.pablo.practica2eva.Fragments.lista;
 import es.iesnervion.pablo.practica2eva.ViewModels.MainVM;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     private lista fragmentLista;
     private detallesPersona fragmentDetalles;
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private MainVM vm;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
