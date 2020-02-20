@@ -13,6 +13,8 @@ public class ContenedorActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contenedor);
+        Bundle datos = this.getIntent().getExtras();
+        String recuperamos_variable_string = datos.getString("variable_string");
     }
 
     public void Atras(View view)
