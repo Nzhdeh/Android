@@ -1,21 +1,27 @@
-package es.iesnervion.nyeghiazaryan.comunicacionentrefragmentyactivity.fragments;
+package es.iesnervion.nyeghiazaryan.appparamovilytablet.fragments;
+
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import androidx.lifecycle.Observer;
 
-import es.iesnervion.nyeghiazaryan.comunicacionentrefragmentyactivity.R;
-import es.iesnervion.nyeghiazaryan.comunicacionentrefragmentyactivity.viewmodels.MainActivityVM;
+import es.iesnervion.nyeghiazaryan.appparamovilytablet.R;
+import es.iesnervion.nyeghiazaryan.appparamovilytablet.viewmodels.MainActivityVM;
 
+/**
+ * A simple {@link Fragment} subclass.
+ */
 public class ContenidoFragment extends Fragment
 {
+
+
     private TextView recibir;
     private MainActivityVM viewModel;
     private Observer<String> observerTexto;
@@ -54,4 +60,5 @@ public class ContenidoFragment extends Fragment
 
         return view;
     }
+
 }

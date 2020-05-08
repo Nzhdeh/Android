@@ -1,6 +1,7 @@
 package es.iesnervion.nyeghiazaryan.comunicacionentrefragmentyactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity
 
     private ViewGroup fragmentContenedor;
 
-    private Observer<String> observerTexto;
+    //private Observer<String> observerTexto;
     private Observer<Integer> observerBoton;
 
     @Override
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity
         fragmentTransaction = fragmentManager.beginTransaction();
 
 
-        BotonesFragment fragemntBotones=new BotonesFragment();
+        BotonesFragment fragemntBotones = BotonesFragment.newInstance();
         fragmentTransaction.add(R.id.flContenedor,fragemntBotones).addToBackStack(null).commit();
 
         observerBoton = new Observer<Integer>()
@@ -51,21 +52,26 @@ public class MainActivity extends AppCompatActivity
                 }else if(integer==R.id.boton2){
                     viewModel.cambiarTexto("soy el boton 2");
                 }
-            }
-        };
-        viewModel.getBoton().observe(this,observerBoton);
-
-        observerTexto = new Observer<String>()
-        {
-            @Override
-            public void onChanged(String s)
-            {
+                //instanciar el fragment aqui
                 ContenidoFragment fragemntContenido=new ContenidoFragment();
                 fragmentManager=getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.flContenedor,fragemntContenido).addToBackStack(null).commit();
             }
         };
-        viewModel.getTextView().observe(this,observerTexto);
+        viewModel.getBoton().observe(this,observerBoton);
+
+//        observerTexto = new Observer<String>()
+//        {
+//            @Override
+//            public void onChanged(String s)
+//            {
+//                ContenidoFragment fragemntContenido=new ContenidoFragment();
+//                fragmentManager=getSupportFragmentManager();
+//                fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.flContenedor,fragemntContenido).addToBackStack(null).commit();
+//            }
+//        };
+//        viewModel.getTextView().observe(this,observerTexto);
     }
 }

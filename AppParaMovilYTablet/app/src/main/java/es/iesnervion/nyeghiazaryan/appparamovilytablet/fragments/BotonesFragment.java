@@ -1,4 +1,5 @@
-package es.iesnervion.nyeghiazaryan.comunicacionentrefragmentyactivity.fragments;
+package es.iesnervion.nyeghiazaryan.appparamovilytablet.fragments;
+
 
 import android.os.Bundle;
 
@@ -10,12 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import es.iesnervion.nyeghiazaryan.comunicacionentrefragmentyactivity.R;
-import es.iesnervion.nyeghiazaryan.comunicacionentrefragmentyactivity.viewmodels.MainActivityVM;
+import es.iesnervion.nyeghiazaryan.appparamovilytablet.R;
+import es.iesnervion.nyeghiazaryan.appparamovilytablet.viewmodels.MainActivityVM;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class BotonesFragment extends Fragment {
 
 
-public class BotonesFragment extends Fragment
-{
     private MainActivityVM viewModel;
     private Button boton1;
     private Button boton2;
@@ -64,4 +68,5 @@ public class BotonesFragment extends Fragment
         });
         return view;
     }
+
 }
