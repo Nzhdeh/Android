@@ -51,6 +51,8 @@ public class ListaFragment extends Fragment
 
         Adaptador miAdapter = new Adaptador(requireContext(),lista);
 
+
+
         listaDatos.setAdapter(miAdapter);
 
         listaDatos.setOnItemClickListener(new AdapterView.OnItemClickListener()
