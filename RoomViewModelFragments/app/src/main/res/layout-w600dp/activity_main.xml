@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragInsercion"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:name="es.iesnervion.nyeghiazaryan.roomviewmodelfragments.fragments.InsertarPersonaFragment"/>
+
+    <fragment
+        android:id="@+id/fragListado"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:name="es.iesnervion.nyeghiazaryan.roomviewmodelfragments.fragments.ListadoFragment"/>
+
+    <fragment
+        android:id="@+id/fragDetalle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:name="es.iesnervion.nyeghiazaryan.roomviewmodelfragments.fragments.DetalleFragment"/>
+
+</LinearLayout>
