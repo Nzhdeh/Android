@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerOpciones">
+        <item>Elige una opción</item>
+        <item>Insertar persona</item>
+        <item>Insertar mascota</item>
+        <item>Listado de personas</item>
+        <item>Listado de mascotas</item>
+        <item>Listado de mascotas por persona</item>
+    </string-array>
+</resources>

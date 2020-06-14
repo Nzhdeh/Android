@@ -57,8 +57,7 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction = fragmentManager.beginTransaction();
 
             BotonesFragment fragemntBotones = new BotonesFragment();
-            fragmentTransaction.add(R.id.flContenedor,fragemntBotones).addToBackStack(null).commit();
-
+            fragmentTransaction.add(R.id.flContenedor,fragemntBotones).commit();
 
             observerBoton = new Observer<Integer>()
             {

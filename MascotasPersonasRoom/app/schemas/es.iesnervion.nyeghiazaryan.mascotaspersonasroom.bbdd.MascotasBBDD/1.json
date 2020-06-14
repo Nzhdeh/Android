@@ -1,0 +1,84 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "66438bc25c5aceb951d1bf8fc5ffb2f0",
+    "entities": [
+      {
+        "tableName": "Persona",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombre` TEXT, `apellidos` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nombre",
+            "columnName": "nombre",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "apellidos",
+            "columnName": "apellidos",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Mascota",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idMascota` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nombreMascota` TEXT, `raza` TEXT, `idPersona` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "idMascota",
+            "columnName": "idMascota",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nombreMascota",
+            "columnName": "nombreMascota",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "raza",
+            "columnName": "raza",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idPersona",
+            "columnName": "idPersona",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "idMascota"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '66438bc25c5aceb951d1bf8fc5ffb2f0')"
+    ]
+  }
+}
